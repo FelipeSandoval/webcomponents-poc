@@ -6,6 +6,7 @@ const Title = () => {
     <style>
       @import url('./fontface/font.css');
       .Title{
+        font-family: 'Open Sans', sans-serif;
         font-size: 28px;
         font-weight: bold;
         font-stretch: normal;

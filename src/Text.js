@@ -6,6 +6,7 @@ const Text = () => {
     <style>
       @import url('./fontface/font.css');
       .Text{
+        font-family: 'Open Sans', sans-serif;
         font-size: 13px;
         font-weight: normal;
         font-stretch: normal;
@@ -20,8 +21,6 @@ const Text = () => {
     </span>
   `;
 }
-
-Title.observedAttributes = ['className'];
 
 customElements.define("my-text", component(Text));
 
