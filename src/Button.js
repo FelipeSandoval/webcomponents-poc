@@ -30,3 +30,5 @@ const Button = ({ onClick, type='button' }) => {
 Button.observedAttributes = ['onClick'];
 
 customElements.define("my-button", component(Button));
+
+export default Button;

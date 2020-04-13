@@ -35,3 +35,5 @@ const Content = ({ title }) => {
 Content.observedAttributes = ['title'];
 
 customElements.define("my-content", component(Content));
+
+export default Content;

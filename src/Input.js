@@ -39,3 +39,5 @@ const Input = ({ onChange, label, name }) => {
 Input.observedAttributes = ['label', 'name', 'onChange'];
 
 customElements.define("my-input", component(Input));
+
+export default Input;

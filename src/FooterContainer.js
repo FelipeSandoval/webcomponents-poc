@@ -2,7 +2,6 @@ import { html} from 'lit-html';
 import { component } from 'haunted';
 
 const FooterContainer = () => {
-  console.log('this happens')
   return html`
     <style>
       @import url('./fontface/font.css');
@@ -21,3 +20,5 @@ const FooterContainer = () => {
 };
 
 customElements.define("my-footer-container", component(FooterContainer));
+
+export default FooterContainer;

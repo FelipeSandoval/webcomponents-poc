@@ -23,6 +23,8 @@ const CheckBox = ({ onClick, label }) => {
     </button>`;
 }
 
-Button.observedAttributes = ['onClick', 'label'];
+CheckBox.observedAttributes = ['onClick', 'label'];
 
 customElements.define("my-checkbox", component(CheckBox));
+
+export default CheckBox;
