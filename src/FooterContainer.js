@@ -12,6 +12,10 @@ const FooterContainer = () => {
         display: flex;
         flex-direction: column;
         padding: 12px 31px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
       }
     </style>
     <div class="footerContainer">
