@@ -12,7 +12,6 @@ const CheckBox = ({ onChange, label, name }) => {
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
-        font-family: inherit;
         color: #555555;
         margin-right: 10px;
       }
