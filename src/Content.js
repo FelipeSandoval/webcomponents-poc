@@ -6,7 +6,6 @@ const Content = ({ title }) => {
     <style>
       @import url('./fontface/font.css');
       .Content{
-        color: #ffffff;
         font-family: 'Open Sans', sans-serif;
       }
       .Content__title{
@@ -21,6 +20,16 @@ const Content = ({ title }) => {
         line-height: normal;
         letter-spacing: normal;
         color: #ffffff;
+      }
+      .Content__body{
+        font-size: 13px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.92;
+        letter-spacing: normal;
+        color: #bdc3c7;
       }
     </style>
     <div class="Content">
