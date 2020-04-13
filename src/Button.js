@@ -1,4 +1,4 @@
-import { html} from 'lit-html';
+import { html } from 'lit-html';
 import { component } from 'haunted';
 
 const Button = ({ onClick, type='button' }) => {
@@ -19,15 +19,27 @@ const Button = ({ onClick, type='button' }) => {
         line-height: normal;
         letter-spacing: normal;
         border: none;
-        box-shadow: none;
+        box-shadow: 0 0 4px #999;
+        outline: none;
+        cursor: pointer;
+        background-position: center;
+        transition: background 0.8s;
+      }
+      .myButton:hover {
+        background: #009999 radial-gradient(circle, transparent 1%, #009999 1%) center/15000%;
+      }
+      .myButton:active {
+        background-color: #6eb9f7;
+        background-size: 100%;
+        transition: background 0s;
       }
     </style>
-    <button type=${type} class="myButton" @click=${onClick}>
+    <button type=${type} class="myButton ripple" @click=${onClick}>
       <slot></slot>
     </button>`;
 }
 
-Button.observedAttributes = ['onClick'];
+Button.observedAttributes = ['onClick', 'type'];
 
 customElements.define("my-button", component(Button));
 

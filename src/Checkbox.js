@@ -18,9 +18,7 @@ const CheckBox = ({ onClick, label }) => {
         letter-spacing: normal;
       }
     </style>
-    <button class="button" @click=${onClick}>
-      <slot></slot>
-    </button>`;
+    <input type='checkbox' @click=${onClick} />`;
 }
 
 CheckBox.observedAttributes = ['onClick', 'label'];
