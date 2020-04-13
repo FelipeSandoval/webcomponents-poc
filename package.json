@@ -9,5 +9,6 @@
   "dependencies": {
     "haunted": "^4.7.0",
     "parcel-bundler": "^1.12.4"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
