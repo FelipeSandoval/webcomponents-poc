@@ -1,7 +1,7 @@
 import { html} from 'lit-html';
 import { component } from 'haunted';
 
-const Text = ({ className }) => {
+const Text = () => {
   return html`
     <style>
       @import url('./fontface/font.css');
@@ -15,7 +15,7 @@ const Text = ({ className }) => {
         color: #444444;
       }
     </style> 
-    <span class="Text ${className}">
+    <span class="Text">
       <slot></slot>
     </span>
   `;

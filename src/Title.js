@@ -17,8 +17,7 @@ const Title = () => {
     </style> 
     <h2 class="Title">
       <slot></slot>
-    </h2>
-  `;
+    </h2>`;
 }
 
 customElements.define("my-title", component(Title));
