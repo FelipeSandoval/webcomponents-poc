@@ -11,6 +11,7 @@ const Input = ({ onChange, label, name }) => {
         align-items: center;
         justify-content: flex-end;
         font-family: 'Open Sans', sans-serif;
+        margin: 0 0 11px;
       }
       .inputContainer__label{
         font-weight: normal;
