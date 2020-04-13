@@ -4,21 +4,20 @@ import { component } from 'haunted';
 const CheckBox = ({ onChange, label, name }) => {
   return html`
     <style>
-      .check{
-        border-radius: 5px;
-        box-shadow: 0 1px 3px 0 #bdbdbd;
-        background-color: #009999;
-        color: #ffffff;
-        padding: 7px 18px;
-        font-size: .8rem;
+      @import url('./fontface/font.css');
+      .checkboxlabel{
+        font-family: 'Open Sans', sans-serif;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
+        font-family: inherit;
+        color: #555555;
+        margin-right: 10px;
       }
     </style>
-    <label for=${name}>${label}</label>
+    <label class="checkboxlabel" for=${name}>${label}</label>
     <input type='checkbox' name=${name}  @change=${onChange} />`;
 }
 
