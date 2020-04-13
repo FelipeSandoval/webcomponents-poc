@@ -34,7 +34,7 @@ const Content = ({ title }) => {
     </style>
     <div class="Content">
       <h5 class="Content__title">${title}</h5>
-      <div lass="Content__body">
+      <div class="Content__body">
         <slot></slot>
       </div>
     </div>
