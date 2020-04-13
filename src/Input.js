@@ -1,7 +1,7 @@
 import { html} from 'lit-html';
 import { component } from 'haunted';
 
-const Input = ({ onChange, label, name, className }) => {
+const Input = ({ onChange, label, name }) => {
   return html`
     <style>
       @import url('./fontface/font.css');
@@ -33,7 +33,7 @@ const Input = ({ onChange, label, name, className }) => {
     </style> 
     <div class="inputContainer">
       <label class="inputContainer__label" for=${name}>${label}</label>
-      <my-input class="inputContainer__input" @change=${onChange} name=${name}></my-input>
+      <input class="inputContainer__input" @change=${onChange} name=${name} />
     </div>
   `;
 }

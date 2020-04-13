@@ -1,7 +1,7 @@
 import { html} from 'lit-html';
 import { component } from 'haunted';
 
-const CheckBox = ({ onClick, label }) => {
+const CheckBox = ({ onChange, label, name }) => {
   return html`
     <style>
       .check{
@@ -18,7 +18,7 @@ const CheckBox = ({ onClick, label }) => {
         letter-spacing: normal;
       }
     </style>
-    <input type='checkbox' @click=${onClick} />`;
+    <input type='checkbox' name=${name}  @change=${onChange} />`;
 }
 
 CheckBox.observedAttributes = ['onClick', 'label'];
