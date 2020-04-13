@@ -6,3 +6,5 @@ import Content from './Content';
 import FooterContainer from './FooterContainer';
 import Logo from './Logo';
 import Navbar from './Navbar';
+import Text from './Text';
+import Title from './Title';
