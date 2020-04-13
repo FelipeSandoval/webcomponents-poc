@@ -6,18 +6,18 @@ const Text = ({ className }) => {
     <style>
       @import url('./fontface/font.css');
       .Text{
-        font-size: 28px;
-        font-weight: bold;
+        font-size: 13px;
+        font-weight: normal;
         font-stretch: normal;
         font-style: normal;
-        line-height: normal;
+        line-height: 1.92;
         letter-spacing: normal;
-        color: #555555;
+        color: #444444;
       }
     </style> 
-    <h2 class="Text ${className}">
+    <span class="Text ${className}">
       <slot></slot>
-    </h2>
+    </span>
   `;
 }
 

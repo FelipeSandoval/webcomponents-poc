@@ -1,7 +1,7 @@
 import { html} from 'lit-html';
 import { component } from 'haunted';
 
-const Title = ({ className }) => {
+const Title = () => {
   return html`
     <style>
       @import url('./fontface/font.css');
@@ -15,13 +15,11 @@ const Title = ({ className }) => {
         color: #555555;
       }
     </style> 
-    <h2 class="Title ${className}">
+    <h2 class="Title">
       <slot></slot>
     </h2>
   `;
 }
-
-Title.observedAttributes = ['className'];
 
 customElements.define("my-title", component(Title));
 
