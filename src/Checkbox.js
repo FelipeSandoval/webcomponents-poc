@@ -18,10 +18,11 @@ const CheckBox = ({ onChange, label, name }) => {
         letter-spacing: normal;
       }
     </style>
+    <label for=${name}>${label}</label>
     <input type='checkbox' name=${name}  @change=${onChange} />`;
 }
 
-CheckBox.observedAttributes = ['onClick', 'label'];
+CheckBox.observedAttributes = ['onClick', 'label', 'name'];
 
 customElements.define("my-checkbox", component(CheckBox));
 

@@ -8,3 +8,4 @@ import Logo from './Logo';
 import Navbar from './Navbar';
 import Text from './Text';
 import Title from './Title';
+import AnchorTag from './AnchorTag';

@@ -9,6 +9,7 @@ const Input = ({ onChange, label, name }) => {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: flex-end;
         font-family: 'Open Sans', sans-serif;
       }
       .inputContainer__label{
